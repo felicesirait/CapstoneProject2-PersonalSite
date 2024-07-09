@@ -1,0 +1,656 @@
+html {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #f2f4f5;
+}
+
+/* NAVIGATION */
+nav{
+    background-color: #0c0c0b;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 1rem;
+}
+
+nav div img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #FFF5E1;
+    font-weight: 600;
+    padding: 8px 0;
+    transition: all;
+    transition-duration: 300ms;
+    border-bottom: 1px solid orangered(0, 0, 0, 0);
+}
+
+nav ul li a:hover {
+    color: orangered;
+    border-bottom: 1px solid black;
+}
+
+/* HOME */
+#home{
+    background: url("./assets/home\ background.jpg")
+        no-repeat center center;
+    background-size: cover;
+    width: 100%;
+    max-width: 100%;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+}
+
+.rectangle{
+    height: 500px;
+    background-color: rgba(240, 255, 255, 0.245);
+    border-radius: 10px;
+    grid-template-columns: span 2;
+    padding-left: 60px;
+    color: #edf0f2;
+    padding-top: 70px;
+}
+
+.rectangle .first {
+    font-family: "Special Elite", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 80px;
+    margin-bottom: 0;
+}
+
+.rectangle .second {
+    font-family: "Rubik Mono One", monospace;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 120px;
+    margin: 0;
+
+    transition: all;
+    transition-duration: 300ms;
+    border-bottom: 1px solid orangered(0, 0, 0, 0);
+}
+
+.second:hover {
+    color: orangered;
+}
+
+.profile img {
+    border-radius: 50%;
+    width: 400px;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+/* ABOUT ME */
+.second-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+}
+
+.pictures{
+    width: 45%;
+    height: 80%;
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+    top: 730px;
+}
+
+.pictures img{
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-30%);
+    transition:  bottom 1s, left 1s;
+}
+
+.pictures img:hover {
+    left: 60%;
+}
+
+.pictures .shape{
+    bottom: 40px;
+}
+
+.pictures .girl{
+    left: 68%;
+}
+
+.introduce {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    height: 513px;
+    text-align: center;
+    padding-left: 100px;
+    padding-right: 100px; 
+}
+
+.introduce .hallo{
+    font-family: "Rubik Mono One", monospace;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 60px;
+    margin-bottom: 20px;
+
+    transition: all;
+    transition-duration: 300ms;
+    border-bottom: 1px solid #e6002300;
+}
+
+.introduce p{
+    font-family: "Courier Prime", monospace;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 17px;
+}
+
+.hallo:hover{
+    color: #f62c07;
+}
+
+/* EDUCATION & EXPERIENCE*/
+.third-container{
+    background-color: #000104;
+    color: #edf0f2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.list{
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+.education, .experience{
+    font-family: "Rubik Mono One", monospace;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+    margin-bottom: 20px;
+
+    transition: all;
+    transition-duration: 300ms;
+    border-bottom: 1px solid orangered(0, 0, 0, 0);
+}
+
+.education:hover, .experience:hover{
+    color: #f62c07;
+}
+
+.education-content, .experience-content{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    word-wrap: break-word;
+}
+
+.img-education{
+    grid-column: span 1;
+    border-radius: 10px;
+    margin-left: 20px;
+}
+
+.content{
+    display: inline-block;
+    margin-left: 170px;
+    margin-top: 0px;
+
+    font-family: "Courier Prime", monospace;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+}
+
+.content2{
+    display: inline-block;
+    margin-left: 155px;
+    margin-top: 0px;
+
+    font-family: "Courier Prime", monospace;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+}
+
+.education, .experience, ul {
+    grid-column: span 2 ;
+}
+
+.year {
+    display: inline-block;
+    margin-right: 50px;
+}
+
+.text {
+    display: inline-block;
+}
+
+.year2{
+    display: inline-block;
+    margin-right: 102px;
+}
+
+/* pembuatan garis dalam bullet */
+ul {
+    list-style: none; 
+    padding-left: 0; 
+}
+
+.special {
+    position: relative; 
+    padding-left: 20px; 
+}
+
+.special::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 10px; 
+    width: 10px; 
+    background-color: #edf0f2; 
+    border-radius: 50%;
+}
+
+.special::after {
+    content: '';
+    position: absolute;
+    left: 5px;
+    top: 15px;
+    height: calc(100% - 0px); 
+    width: 1px;
+    background-color: #edf0f2;
+}
+
+.special:last-child::after {
+    content: none;
+}
+
+/* SKILLS */
+.fourth-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+}
+
+.logo {
+    height: 60px;
+    margin-right: 40px;
+
+}
+
+.technical{
+    margin-left: 20px;
+}
+
+.technical, .language{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+}
+
+.language{
+    grid-template-columns: span 2;
+}
+
+.language p{
+    font-weight: bold;
+}
+
+.inside{
+    font-family: "Courier Prime", monospace;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+}
+
+/* CONTACT */
+.black-container{
+    background-color: #000104;
+    color: #edf0f2;
+    text-align: center; 
+    padding-bottom: 50px;
+}
+
+.black-container h1{
+    padding-top: 50px;
+    padding-bottom: 30px;
+    font-family: "Rubik Mono One", monospace;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+    margin-bottom: 20px;
+
+    transition: all;
+    transition-duration: 300ms;
+    border-bottom: 1px solid orangered(0, 0, 0, 0);
+}
+
+.black-container h1:hover{
+    color: #f62c07;
+}
+
+.black-container .isi{
+    font-family: "Courier Prime", monospace;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 17px;
+}
+
+.black-container .ancor a{
+    color: #edf0f2;
+    text-decoration: none;
+    margin: 10px 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.ancor a:hover{
+    color: #f62c07;
+}
+
+.ancor{
+    margin-top: 60px;
+}
+
+.copyright{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* RESPONSIVE */
+@media (max-width:1068px){
+    .rectangle{
+        height: 400px;
+    }
+
+    .rectangle .first {
+        font-size: 70px;
+    }
+
+    .rectangle .second {
+        font-size: 100px;
+    }
+
+    .profile img {
+        width: 300px;
+    }
+
+    .pictures{
+        top: 630px ;
+    }
+
+    .third-container .img-education{
+        width: 40%;
+    }
+}
+
+@media (max-width: 1254px){
+    .year2{
+        margin-right: 25em;
+    }
+
+    .content, .content2{
+        margin-left: 0px;
+    }
+}
+
+@media (max-width: 890px){
+    .rectangle{
+        height: 350px;
+    }
+
+    .rectangle .first {
+        font-size: 60px;
+    }
+
+    .rectangle .second {
+        font-size: 90px;
+    }
+
+    .pictures{
+        top: 596px ;
+    }
+}
+
+@media (max-width: 638px){
+    .profile img {
+        width: 200px;
+    }
+
+    .rectangle{
+        height: 250px;
+    }
+
+    .rectangle .first {
+        font-size: 40px;
+    }
+
+    .rectangle .second {
+        font-size: 60px;
+    }
+
+    /* ABOUT ME */
+    .pictures{
+        width: 25%;
+        height: 60%;
+        top: 494px;
+    }
+
+    .pictures img{
+        left: 20%;
+    }
+
+    .introduce{
+        padding-left: 30px;
+        padding-right: 30px;
+        height: 400px;
+    }
+
+    .introduce .hallo, .black-container h1{
+        font-size: 40px;
+        margin-top: 10px;
+    }
+
+    .introduce p{
+        font-size: 15px;
+    }
+
+    /* EDUCATION & EXPERIENCE*/
+    .education, .experience{
+        font-size: 34px;
+    }
+
+    .year, .year2, .text{
+        font-size: 22px;
+    }
+
+    .content, .content2{
+        font-size: 17px;
+    }
+}
+
+/*MOBILE DEVICES SCREEN*/
+@media (min-width:319px) and (max-width: 480px) {
+    /* NAVIGATION */
+    nav{
+        padding: 0.5rem 1rem;
+    }
+    nav div img {
+        width: 50px;
+        height: 50px;
+    }
+
+    nav ul li a {
+        font-size: 10px;
+    }
+
+    /* HOME */
+    .container{
+        display: block;
+        grid-template-columns: 0;
+        grid-template-rows: 1fr 1fr;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .profile img {
+        width: 100px;
+        margin-left: 0;
+        margin-bottom: 30px;
+        margin-top: 30px ;
+    }
+
+    .rectangle{
+        grid-template-rows: span 2;
+        height: 100px;
+        text-align: left;
+        padding-left: 20px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .rectangle .first {
+        font-size: 20px;
+    }
+
+    .rectangle .second {
+        font-size: 40px;
+    }
+
+    /* ABOUT ME */
+    .second-container{
+        display: block;
+    }
+
+    .introduce .hallo, .black-container h1{
+        font-size: 30px;
+        margin-top: 10px;
+    }
+
+    .pictures{
+        top: 520px;
+        width: 15%;
+        height: 50%;
+        left: 40%;
+    }
+
+    .introduce{
+        height: 600px;
+    }
+
+    .introduce p{
+        margin-top: 250px;
+    }
+
+    /* EDUCATION & EXPERIENCE*/
+    .third-container{
+        display: block;
+        text-align: center;
+    }
+
+    .list{
+        text-align: left;
+        padding-left: 10px;
+    }
+
+    .education-content h2, .experience-content h2{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .education, .experience{
+        font-size: 28px;
+    }
+
+    .year, .year2, .text{
+        font-size: 18px;
+    }
+
+    .content, .content2{
+        font-size: 13px;
+    }
+
+    .img-education{
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    /* SKILLS */
+    .fourth-container{
+        display: block;
+        text-align: center;
+    }
+
+    .technical, .language{
+        font-size: 15px;
+    }
+
+    .logo {
+        height: 40px;
+        margin-right: 20px;
+    }
+
+    .technical{
+        margin-left: 0;
+    }
+
+    .inside{
+        font-size: 15px;
+    }
+
+    /* CONTACT */
+    .black-container{
+        background-color: #000104;
+        color: #edf0f2;
+        text-align: center; 
+        padding-bottom: 30px;
+    }
+
+    .black-container h1{
+        font-size: 30px;
+        padding-top: 30px;
+        padding-bottom: 10px;
+    }
+
+    .black-container .isi{
+        font-size: 15px;
+    }
+
+    .ancor a{
+        margin: 10px 10px;
+    }
+
+    .ancor{
+        margin-top: 30px;
+    }
+
+    .ancor a, .copyright{
+        font-size: 13px;
+    }
+}
