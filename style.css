@@ -556,16 +556,16 @@ ul {
     .pictures{
         top: 520px;
         width: 15%;
-        height: 40%;
+        height: 50%;
         left: 40%;
     }
 
     .introduce{
-        height: 600px;
+        height: 800px;
     }
 
     .introduce p{
-        margin-top: 300px;
+        margin-top: 400px;
     }
 
     /* EDUCATION & EXPERIENCE*/
